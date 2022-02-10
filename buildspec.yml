@@ -2,14 +2,19 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo "we are on pre-build stage."
+      - echo we are on pre-build stage.
   build:
     commands:
-      - echo "we are on build stage."
-      - mvn clean install
+      - echo we are on build stage.
+      - mvn clean
   post_build:
     commands:
-      - echo "we are on post-build stage."
+      - echo we are on post-build stage.
+      - echo packaging war file
+      - mvn package
+      - echo moving war file from target to root directory.
+      - mv target/ofg-api-discovery-service-ms-1.0.0.war ofg-api-discovery-service-ms-1.0.0.war
+      - echo war moved successfully.
 artifacts:
   files:
-    - target/**
+    - ofg-api-discovery-service-ms-1.0.0.war
