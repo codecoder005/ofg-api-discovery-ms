@@ -13,8 +13,8 @@ phases:
       - echo packaging war file
       - mvn package
       - echo moving war file from target to root directory.
-      - mv target/ofg-api-discovery-service-ms-1.0.0.war ofg-api-discovery-service-ms-1.0.0.war
+      - mv target/ofg-api-discovery-ms-1.0.0.war ofg-api-discovery-ms-1.0.0.war
       - echo war moved successfully.
 artifacts:
   files:
-    - ofg-api-discovery-service-ms-1.0.0.war
+    - ofg-api-discovery-ms-1.0.0.war
