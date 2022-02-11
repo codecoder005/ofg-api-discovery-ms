@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.orgofarmsgroup</groupId>
-    <artifactId>ofg-api-discovery-service-ms</artifactId>
+    <artifactId>ofg-api-discovery-ms</artifactId>
     <packaging>war</packaging>
     <version>1.0.0</version>
 
